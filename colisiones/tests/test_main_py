@@ -1,0 +1,19 @@
+import unittest
+from src.main import f
+
+class TestMain(unittest.TestCase):
+    
+    def test_f(self):
+        self.assertEqual(f('LR'), '0 0')
+        self.assertEqual(f('RL'), '1 1')
+        self.assertEqual(f('RRR'), '0 0 0')
+        self.assertEqual(f('RRL'), '1 2 1')
+        self.assertEqual(f('RRRL'), '2 3 2 1')
+        self.assertEqual(f('LRL'), '0 1 0')
+        self.assertEqual(f('RLR'), '1 2 1')
+        self.assertEqual(f('LLL'), '0 0 0')
+        self.assertEqual(f('RLRLR'), '1 2 4 2 1')
+        self.assertEqual(f('RRLRL'), '1 2 3 2 1')
+
+if __name__ == "__main__":
+    unittest.main()
