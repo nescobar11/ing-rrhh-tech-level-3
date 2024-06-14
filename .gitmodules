@@ -1,0 +1,9 @@
+[submodule "colisiones"]
+	path = colisiones
+	url = https://github.com/nescobar11/colisiones.git
+[submodule "opinion"]
+	path = opinion
+	url = https://github.com/nescobar11/opinion.git
+[submodule "login"]
+	path = login
+	url = https://github.com/nescobar11/login.git
