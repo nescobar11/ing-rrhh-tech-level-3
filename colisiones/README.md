@@ -1,4 +1,4 @@
-#Colisiones
+# Colisiones
 Este es un proyecto de ejemplo para simular colisiones entre robots.
 
 ## Instalación
