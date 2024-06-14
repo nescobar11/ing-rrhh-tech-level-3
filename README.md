@@ -10,3 +10,4 @@ mis servicios, desempeño profesional y pedagógico.
 
 ## Subproyectos
 - [colisiones](colisiones/README.md)
+- [opinion](opinion/README.md)
