@@ -1,0 +1,112 @@
+:root{
+    --naranja:#f59622;
+    --blanco:#fff;
+    --fuente:'Quicksand', sans-serif;
+}
+html{
+    box-sizing: border-box;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuente);
+    background-color: var(--blanco);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 95%;
+}
+
+.image-form{
+    background-image: url('../img/orange.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    flex: 0 0 calc(60%);
+    position: relative;
+    
+}
+.image-form::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   /* background: linear-gradient(to right,rgba(141,169,196,.5), rgba(19, 64, 116, .5) ); */
+   
+}
+
+@media(min-width:768px){
+    .image-form{
+        height: auto;
+        background-position: right;
+    }
+
+}
+@media(min-width:1200px){
+    .image-form{
+        background-position: center;
+    }
+}
+
+@media(min-width:768px){
+    .container-form{
+        display: flex;
+    }
+}
+
+.form{
+    padding: 40px;
+    background-color: var(--naranja);
+}
+.text-form h2, .input label, .password-forgot a, .text-form p{
+    color: var(--blanco);
+}
+.text-form h2{
+    font-size: 40px;
+    text-align: center;
+}
+.text-form p{
+    font-size: 22px;
+    text-align: center;
+}
+.input label{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.password-forgot a{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 22px;
+}
+.input input{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 5px;
+    outline: none;
+}
+.input input[type="submit"]{
+    background-color: #59b15a;
+    color: var(--blanco);
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    transition: background-color .3s ease-in-out;
+}
+.input input[type="submit"]:hover{
+  
+    cursor: pointer;
+    background-color:#9acd6f;
+}
